@@ -1,0 +1,12 @@
+[ERROR][2023-02-23 14:06:47][app.py:19] - App startup failed!
+[ERROR][2023-02-23 14:06:47][app.py:20] - list index out of range
+Traceback (most recent call last):
+  File "D:\wechatbot\chatgpt-on-wechat\app.py", line 17, in <module>
+    channel.startup()
+  File "D:\wechatbot\chatgpt-on-wechat\channel\wechat\wechat_channel.py", line 44, in startup
+    dictdata = itchat.search_friends()
+  File "C:\Users\IDEA\AppData\Local\Programs\Python\Python39\lib\site-packages\itchat\core.py", line 451, in search_friends
+    return self.storageClass.search_friends(name, userName, remarkName,
+  File "C:\Users\IDEA\AppData\Local\Programs\Python\Python39\lib\site-packages\itchat\storage\__init__.py", line 66, in search_friends
+    return copy.deepcopy(self.memberList[0]) # my own account
+IndexError: list index out of range
